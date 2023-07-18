@@ -1,0 +1,30 @@
+.product-list{
+    /* border: 1px dashed grey; */
+    position: relative;
+}
+
+.product-list-area{
+    /* border: 1px dashed grey; */
+    /* padding: 5px; */
+    position: relative;
+}
+.home-product1{
+    /* border: 1px dashed grey; */
+    width: 280px;
+    height: 460px;
+    position: relative;
+}
+.home-productList1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+}
+
+.pagination {
+    /* border: 1px dashed white; */
+    margin-left: auto !important;
+    width: 330px;
+    color: #5840BA;
+    /* font-weight: 500!important; */
+}

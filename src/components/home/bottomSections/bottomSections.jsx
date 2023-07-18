@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { HomeProduct } from '../homeProduct/homeProduct'
 import './bottomSections.css'
 
-export const BottomSections = () => {
+export const BottomSections = ({categories}) => {
     const [productList, setProductList] = useState(['', '', ''])
     return (
         <div className="bottom-section">
