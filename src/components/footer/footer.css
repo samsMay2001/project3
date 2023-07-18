@@ -1,4 +1,43 @@
 .footer {
-    border: 1px dashed grey;
-    height: 300px;
+    /* border: 1px dashed grey; */
+    height: 250px;
+    display: flex;
+}
+.footer-logo{
+    /* border: 1px dashed grey; */
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+}
+.footer-section{
+    /* border: 1px dashed grey; */
+    /* height: 100%; */
+    width: 100%;
+}
+.footer-logo-txt {
+    width: 75%;
+    font-weight: 500;
+    color: #555555;
+}
+.footer-section-head{
+    /* border: 1px dashed grey; */
+    height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
+    user-select: none;
+}
+.footer-section-content{
+    display: flex;
+}
+.footer-link1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-link{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: 500;
 }
