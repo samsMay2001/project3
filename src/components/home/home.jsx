@@ -1,3 +1,4 @@
+import { BottomSections } from './bottomSections/bottomSections'
 import './home.css'
 import { MidSections } from './midSections/midSections'
 import { TopSections } from './topSections/topsections'
@@ -7,7 +8,7 @@ export const Home = () => {
         <div className='home'>
             <TopSections/>
             <MidSections/>
-            <div className="bottom-section"></div>
+            <BottomSections/>
         </div>
     )
 }

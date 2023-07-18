@@ -3,6 +3,7 @@
     margin: auto;
     --mid-s3-height : 430px; 
     /* margin-top: 30px; */
+    margin-bottom: 40px;
 }
 .mid-sections > div{
     display: flex;
