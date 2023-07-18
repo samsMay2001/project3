@@ -1,0 +1,110 @@
+.top-sections{
+    /* border: 1px dashed grey; */
+    margin: auto;
+    height: 470px;
+    max-width: var(--home-width);
+    display: flex;
+    margin-bottom: 50px;
+    /* overflow: hidden; */
+}
+.top-section:first-child{
+    /* border: 1px dashed grey; */
+    height: 100%;
+    width: 50%;
+}
+.top-section:nth-child(2){
+    /* border: 1px dashed grey; */
+    height: 100%;
+    width: 50%;
+}
+
+.top-section > h1{
+    /* border: 1px dashed grey; */
+    margin: 0;
+    width: 87%;
+    font-size: 50px;
+    font-weight:500;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+.top-section > p{
+    margin: 0;
+    width: 77%;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--label-color);
+    margin-bottom: 35px;
+}
+.top-section > button{
+    height: 45px;
+    border-radius: 17px;
+    color: #d1d1d1;
+    font-weight: 600;
+    background-color: #1c1c1c;
+    width: 135px;
+    border: 0;
+    font-size: 14px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.top-section-stickers{
+    display: flex;
+    margin-bottom: 20px;
+}
+.top-section-stickers >div {
+    margin-right: 20px;
+}
+.top-section-stickers >div >h1{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 600;
+}
+.top-section-stickers >div >p{
+    margin: 0;
+    color: var(--label-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+/* .top-section-stickers >div  */
+.top-section-sticker1{
+    display: flex;
+    margin-bottom: 20px;
+}
+.blue{
+    background-color: #5840BA;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+}
+.orange{
+    background-color: #FC5E3B;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin-left: -10px;
+}
+.back-img{
+    /* border: 1px dashed grey; */
+    height: 105%;
+    margin-left: -88px;
+}
+.add-label{
+    position: absolute;
+    top: 210px;
+    left: -45px;
+    transform: rotate(-90deg);
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+.shoe-img{
+    /* border: 1px dashed red; */
+    position: absolute;
+    top: 120px;
+    left: -50px;
+    height: 80%;
+}
+.top-section {
+    position: relative;
+
+}

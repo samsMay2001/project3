@@ -1,0 +1,69 @@
+.mid-sections{
+    max-width:var(--home-width);
+    margin: auto;
+    --mid-s3-height : 430px; 
+    /* margin-top: 30px; */
+}
+.mid-sections > div{
+    display: flex;
+    margin-bottom: 20px;
+}
+.mid-s1{
+    font-weight: 500;
+    font-size: 32px;
+    width: 90%;
+}
+.mid-s2{
+    font-weight: 500;
+    color: var(--label-color);
+    font-size: 15px;
+}
+.mid-s3{
+    /* border: 1px dashed red; */
+    width: 57%;
+    height: var(--mid-s3-height);
+}
+.mid-s4{
+    /* border: 1px dashed red; */
+    width: 43%;
+    height: var(--mid-s3-height);
+    padding-left: 20px;
+}
+.mid-s5{
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 500;
+    width: 300px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 30px;
+}
+.mid-s6{
+    font-weight: 500;
+    font-size: 16px;
+    color: #505050;
+    margin-bottom: 10px;
+    position: relative
+}
+.mid-s3 > div > button{
+    height: 40px;
+    border-radius: 17px;
+    color: #d1d1d1;
+    font-weight: 600;
+    background-color: #1c1c1c;
+    width: 125px;
+    border: 0;
+    font-size: 13px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.ad2, .ad3{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ad3{
+    left: 25px;
+}

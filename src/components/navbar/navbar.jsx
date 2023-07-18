@@ -1,8 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom'
 import './navbar.css'
 import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
-import SearchIcon from '@mui/icons-material/Search';
-import { Avatar } from '@mui/material';
 
 export const NavBar = () => {
     const navigate = useNavigate(); 
