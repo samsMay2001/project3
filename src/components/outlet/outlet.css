@@ -1,6 +1,7 @@
 .outlet {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
+    padding-top: 70px;
 }
 main{
     border: 0px dashed grey;

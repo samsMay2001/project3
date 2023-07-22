@@ -1,0 +1,20 @@
+.category{
+    /* border: 1px dashed grey; */
+    background-color: #efefef;
+    height: 400px;
+    width: 380px;
+    cursor: pointer;
+    position: relative;
+}
+.shop-category{
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 60px;
+    bottom: 20px;
+    right: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
