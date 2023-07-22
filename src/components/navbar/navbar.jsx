@@ -1,6 +1,9 @@
 import { NavLink, useNavigate } from 'react-router-dom'
 import './navbar.css'
 import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import AddIcon from '@mui/icons-material/Add';
+import applogo from '../imgs/logo2.png'
 import { useEffect, useState } from 'react';
 
 export const NavBar = () => {
@@ -24,12 +27,26 @@ export const NavBar = () => {
     })
     return (
         <div className={`navbar ${showShadown && 'navbar-shadow'}`}>
-            <NavLink className="nav-logo" to={"/"}> <h1>ELITLUX</h1></NavLink>
-            <NavLink className={"nav-tab"} to={"/men"}>Men</NavLink>
-            <NavLink className={"nav-tab"} to={"/women"}>Women</NavLink>
-            <NavLink className={"nav-tab"} to={"/categories"}>Categories</NavLink>
-            <NavLink className={"nav-tab"} to={"/brands"}>Brands</NavLink>
-            
+            <div className="navbar1">
+                <NavLink className="nav-logo" to={"/"}> <img style={{width: '150px'}} src={applogo} alt='logo'/></NavLink>
+                <NavLink className={"nav-tab"} to={"/men"}>Men</NavLink>
+                <NavLink className={"nav-tab"} to={"/women"}>Women</NavLink>
+                <NavLink className={"nav-tab"} to={"/categories"}>Categories</NavLink>
+                <NavLink className={"nav-tab"} to={"/brands"}>Brands</NavLink>
+                
+                <div className="nav-right-area">
+                    <div>
+                        <div className="nav-right-btn">
+                            <AccountCircleOutlinedIcon className='btn-icon'/>
+                            <div>Sign In</div>
+                        </div>
+                        <div className="nav-right-btn">
+                            <AddIcon className=''/>
+                            <div>Add Account</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
