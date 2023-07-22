@@ -2,39 +2,44 @@ import './midSections.css'
 import ad2 from '../../imgs/ad2Test1.png'
 import ad3 from '../../imgs/ad3Test1.png'
 
+import HouseIcon from '@mui/icons-material/House';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import StoreMallDirectoryIcon from '@mui/icons-material/StoreMallDirectory';
+import BusinessIcon from '@mui/icons-material/Business';
+import DomainAddIcon from '@mui/icons-material/DomainAdd';
+import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { StoreIcon } from './store';
+
 export const MidSections = () => {
     return (
-        <div className="mid-sections">
-            <div>
-                <div style={{width: '50%'}}>
-                    <div className="mid-s1">
-                        New Style for Lastest Collections
-                    </div>
+        <div className="mid-section">
+            <div className="mid-section-cards">
+                <div className="mid-section-card">
+                    <HouseIcon className='card-icon'/>
+                    <div>Houses</div>
                 </div>
-                <div style={{width: '50%'}}>
-                    <div className="mid-s2">
-                        Discover our latest collection of shoes that are perfect for any occasion. 
-                        From casual wear to formal attire. 
-                        We have Everything you need to revamp your wardrobe and stay on trend. 
-                    </div>
+                <div className="mid-section-card">
+                    <ApartmentIcon className='card-icon'/>
+                    <div>Apartments</div>
                 </div>
-            </div>
-            <div style={{}}>
-                <div className="mid-s3">
-                    <div style={{border: '1px dashed white', overflow: 'hidden', paddingLeft:'30px', height: '100%', position: 'relative'}}>
-                        <img className='ad2' src={ad2} alt='ad2'/>
-                        <div className='mid-s5'>New Running Style</div>
-                        <div className='mid-s6'>NOW AVAILABLE</div>
-                        <button>Check Now</button>
-                    </div>
+                <div className="mid-section-card">
+                    <BusinessIcon className='card-icon'/>
+                    <div>Commercial</div>
                 </div>
-                <div className="mid-s4" >
-                    <div  style={{border: '1px dashed white', overflow: 'hidden', height: '100%', position: 'relative'}}>
-                        <img className='ad3' src={ad3} alt="ad3" />
-                    </div>
+                <div className="mid-section-card">
+                    <MapsHomeWorkIcon className='card-icon'/>
+                    <div>Daily Rental</div>
+                </div>
+                <div className="mid-section-card">
+                    <DomainAddIcon className='card-icon'/>
+                    <div>New Buildings</div>
+                </div>
+                <div className="mid-section-card">
+                    <MoreHorizIcon className='card-icon'/>
+                    <div>More</div>
                 </div>
             </div>
-
         </div>
     )
 }

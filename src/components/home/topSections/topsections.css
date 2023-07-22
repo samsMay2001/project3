@@ -1,7 +1,7 @@
 .top-sections{
     /* border: 1px dashed grey; */
     margin: auto;
-    height: 470px;
+    height: 570px;
     max-width: var(--home-width);
     display: flex;
     margin-bottom: 50px;
@@ -11,11 +11,15 @@
     /* border: 1px dashed grey; */
     height: 100%;
     width: 50%;
+    z-index:1;
+    padding-top: 100px;
 }
 .top-section:nth-child(2){
     /* border: 1px dashed grey; */
     height: 100%;
     width: 50%;
+    z-index: 0;
+    display: flex;
 }
 
 .top-section > h1{
@@ -85,8 +89,9 @@
 }
 .back-img{
     /* border: 1px dashed grey; */
-    height: 105%;
-    margin-left: -88px;
+    width: 95%;
+    margin-left: auto;
+    object-fit: cover;
 }
 .add-label{
     position: absolute;
@@ -96,13 +101,6 @@
     font-weight: 500;
     font-size: 14px;
     color: white;
-}
-.shoe-img{
-    /* border: 1px dashed red; */
-    position: absolute;
-    top: 120px;
-    left: -50px;
-    height: 80%;
 }
 .top-section {
     position: relative;

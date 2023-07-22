@@ -42,7 +42,7 @@ export const NavBar = () => {
                         </div>
                         <div className="nav-right-btn">
                             <AddIcon className=''/>
-                            <div>Add Account</div>
+                            <div>Add Property</div>
                         </div>
                     </div>
                 </div>
