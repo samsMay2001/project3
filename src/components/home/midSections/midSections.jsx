@@ -10,35 +10,23 @@ import DomainAddIcon from '@mui/icons-material/DomainAdd';
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { StoreIcon } from './store';
+import { useRef, useState } from 'react';
+import { IconCard } from './IconCardComp';
 
 export const MidSections = () => {
+    const midRef = useRef()
+    function triggleClick () {
+        // const 
+    }
     return (
-        <div className="mid-section">
+        <div className="mid-section" ref={midRef}>
             <div className="mid-section-cards">
-                <div className="mid-section-card">
-                    <HouseIcon className='card-icon'/>
-                    <div>Houses</div>
-                </div>
-                <div className="mid-section-card">
-                    <ApartmentIcon className='card-icon'/>
-                    <div>Apartments</div>
-                </div>
-                <div className="mid-section-card">
-                    <BusinessIcon className='card-icon'/>
-                    <div>Commercial</div>
-                </div>
-                <div className="mid-section-card">
-                    <MapsHomeWorkIcon className='card-icon'/>
-                    <div>Daily Rental</div>
-                </div>
-                <div className="mid-section-card">
-                    <DomainAddIcon className='card-icon'/>
-                    <div>New Buildings</div>
-                </div>
-                <div className="mid-section-card">
-                    <MoreHorizIcon className='card-icon'/>
-                    <div>More</div>
-                </div>
+                <IconCard Icon={HouseIcon} Text={'Home'}/>
+                <IconCard Icon={ApartmentIcon} Text={'Apartments'}/>
+                <IconCard Icon={BusinessIcon} Text={'Commercial'}/>
+                <IconCard Icon={MapsHomeWorkIcon} Text={'Dairly Rental'}/>
+                <IconCard Icon={DomainAddIcon} Text={'New Buildings'}/>
+                <IconCard Icon={MoreHorizIcon} Text={'More'}/>
             </div>
         </div>
     )

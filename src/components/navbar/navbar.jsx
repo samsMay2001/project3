@@ -22,7 +22,7 @@ export const NavBar = () => {
             setShowShadow(scrollPosition > threshold);
         })
         return (
-            window.removeEventListener('scroll', ()=> {console.log('a')})
+            window.removeEventListener('scroll', ()=>{})
         )
     })
     return (
