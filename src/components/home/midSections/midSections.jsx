@@ -12,6 +12,9 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { StoreIcon } from './store';
 import { useRef, useState } from 'react';
 import { IconCard } from './IconCardComp';
+import { HomeCard } from './houseCardComp';
+import home1 from '../../imgs/home1.png'; 
+import home2 from '../../imgs/home2.png'; 
 
 export const MidSections = () => {
     const midRef = useRef()
@@ -27,6 +30,20 @@ export const MidSections = () => {
                 <IconCard Icon={MapsHomeWorkIcon} Text={'Dairly Rental'}/>
                 <IconCard Icon={DomainAddIcon} Text={'New Buildings'}/>
                 <IconCard Icon={MoreHorizIcon} Text={'More'}/>
+            </div>
+            <div className="mid-section-home-cards">
+                <HomeCard src={home1} 
+                    hText={'Buy A Home'} 
+                    pText={'Discover your dream home with our expert guidance and find the perfect property to call your own. Make your dreams come true!'} 
+                    bText={'Find a home'}/>
+                <HomeCard src={home2} 
+                    hText={'Sell A Property'} 
+                    pText={`Empower your real estate journey with our exceptional and personalized selling services, maximizing your property's true value.`} 
+                    bText={'Place an ad'}/>
+                <HomeCard src={home2} 
+                    hText={'Rent A Property'} 
+                    pText={`Discover the ideal rental property with our tailored selection and leasing services, ensuring a seamless experience.`} 
+                    bText={'Find a rental'}/>
             </div>
         </div>
     )

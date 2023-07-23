@@ -18,7 +18,7 @@ export const NavBar = () => {
     useEffect(()=> {
         window.addEventListener('scroll', ()=>{
             const scrollPosition = window.scrollY;
-            const threshold = 100; // Adjust this value to set when the shadow appears
+            const threshold = 10; // Adjust this value to set when the shadow appears
             setShowShadow(scrollPosition > threshold);
         })
         return (
