@@ -4,7 +4,7 @@ import TimeToLeaveOutlinedIcon from '@mui/icons-material/TimeToLeaveOutlined';
 import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import { useState } from 'react';
-export const TopOfferCard = () => {
+export const ProductCard = ({verified, featured, newListing, forSale, location, size, price, numBedRooms, numBathRooms, numParking}) => {
     const [activeIcon, setActiveIcon] = useState(false); 
     const handleMouseEnter = () => {
         setActiveIcon(true);
@@ -18,9 +18,9 @@ export const TopOfferCard = () => {
             <div className="product-img">
                 <div className={`product-img-background ${ activeIcon && 'product-img-active'}`}>
                     <div className='product-img-labels'>
-                        <div className="product-img-label-green">Verified</div>
-                        <div className="product-img-label-red">Featured</div>
-                        <div className="product-img-label-blue">New</div>
+                        { verified &&<div className="product-img-label-green">Verified</div>}
+                        { featured &&<div className="product-img-label-red">Featured</div>}
+                        { newListing &&<div className="product-img-label-blue">New</div>}
                     </div>
                     <div className={`product-fav ${activeIcon && 'product-fav-active'}`}>
                         <FavoriteBorderOutlinedIcon fontSize='small'/>
@@ -28,25 +28,25 @@ export const TopOfferCard = () => {
                 </div>
             </div>
             <div style={{paddingLeft: '20px', paddingRight:'20px'}}>
-                <div className="card-label" >FOR SALE</div>
-                <div className={`card-label ${activeIcon && 'card-label-active'}`}>Cottage | 120 sq.m</div>
-                <div className="card-label">42 Broadway New York, NY, 10004</div>
+                <div className="card-label" >{forSale ? 'FOR SALE' : 'FOR RENT'}</div>
+                <div className={`card-label ${activeIcon && 'card-label-active'}`}>{size}</div>
+                <div className="card-label">{location}</div>
                 <div className="card-label">
                     <PaymentsIcon/>
-                    <div>$184,000</div>
+                    <div>{price}</div>
                 </div>
                 <div className="card-label">
                     <div>
                         <div>
-                            <div>4</div>
+                            <div>{numBedRooms}</div>
                             <BedOutlinedIcon fontSize='small'/>
                         </div>
                         <div>
-                            <div>2</div>
+                            <div>{numBathRooms}</div>
                             <BathtubOutlinedIcon fontSize='small'/>
                         </div>
                         <div>
-                            <div>1</div>
+                            <div>{numParking}</div>
                             <TimeToLeaveOutlinedIcon fontSize='small'/>
                         </div>
                     </div>

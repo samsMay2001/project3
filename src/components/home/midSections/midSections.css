@@ -111,12 +111,12 @@
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0px 2px 4px #0000000e;
+    box-shadow: 0px 2px 4px #00000022;
     transition: .3s;
     position: relative;
 }
 .product-card:hover{
-    box-shadow: 0px 2px 10px #00000022;
+    box-shadow: 0px 2px 10px #00000037;
 }
 .product-img{
     /* border: 1px dashed; */
@@ -160,7 +160,7 @@
     /* flex-direction: column; */
     flex-wrap: wrap;
     width: 90px;
-    height: 100px;
+    height: 1px;
     margin-right: 140px;
 }
 .product-img-label-green, .product-img-label-red, .product-img-label-blue {
