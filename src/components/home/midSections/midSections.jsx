@@ -9,12 +9,14 @@ import BusinessIcon from '@mui/icons-material/Business';
 import DomainAddIcon from '@mui/icons-material/DomainAdd';
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { StoreIcon } from './store';
 import { useRef, useState } from 'react';
 import { IconCard } from './IconCardComp';
 import { HomeCard } from './houseCardComp';
 import home1 from '../../imgs/home1.png'; 
 import home2 from '../../imgs/home2.png'; 
+import { TopOfferCard } from './topOfferCard';
 
 export const MidSections = () => {
     const midRef = useRef()
@@ -44,6 +46,16 @@ export const MidSections = () => {
                     hText={'Rent A Property'} 
                     pText={`Discover the ideal rental property with our tailored selection and leasing services, ensuring a seamless experience.`} 
                     bText={'Find a rental'}/>
+            </div>
+            <div style={{display: 'flex', alignItems: 'center'}}>
+                <div style={{fontWeight: '700', fontSize: '28px', marginBottom: '20px'}}>Top offers</div>
+                <div style={{cursor:'pointer', color: 'GrayText',marginLeft:'auto', display: 'flex', justifyContent: 'right', alignItems:'center'}}>
+                    <div style={{marginLeft: '10px'}}>View All</div>
+                    <ArrowRightAltIcon/>
+                </div>
+            </div>
+            <div className="mid-section-top-offers">
+                <TopOfferCard/>
             </div>
         </div>
     )
