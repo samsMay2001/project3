@@ -103,6 +103,7 @@
 .mid-section-top-offers{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .product-card{
     /* border: 1px dashed grey; */
@@ -162,6 +163,7 @@
     width: 90px;
     height: 1px;
     margin-right: 140px;
+    /* margin-bottom: 100px; */
 }
 .product-img-label-green, .product-img-label-red, .product-img-label-blue {
     display: flex;
@@ -236,4 +238,42 @@
 .card-label:nth-child(5)>div>div > div{
     margin-right: 5px;
 }
-
+.property-cost{
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+}
+.property-cost-section:nth-child(1){
+    /* background-color: #cdcdcd; */
+    width: 38%;
+    height: 100%;
+}
+.property-cost-section:nth-child(1) > img {
+    height: 100%;
+}
+.property-cost-section:nth-child(2){
+    width: 59%;
+    /* border: 1px dashed grey; */
+    padding-top: 90px;
+}
+.property-cost-section:nth-child(2) > h1{
+    color: #2d2d2d;
+}
+.property-cost-section:nth-child(2) > div{
+    width: 80%;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+.property-cost-section:nth-child(2) > button{
+    text-transform: none;
+    height: 45px;
+    width: 130px;
+    font-weight: 700;
+    font-size: 15px;
+    transform: scale(1.1);
+    margin-left: 5px;
+    background-color: #FC5E3B;
+    color: white;
+    border: 0;
+}
