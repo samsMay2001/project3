@@ -1,30 +1,22 @@
 import './midSections.css'
-import ad2 from '../../imgs/ad2Test1.png'
-import ad3 from '../../imgs/ad3Test1.png'
 
 import HouseIcon from '@mui/icons-material/House';
 import ApartmentIcon from '@mui/icons-material/Apartment';
-import StoreMallDirectoryIcon from '@mui/icons-material/StoreMallDirectory';
 import BusinessIcon from '@mui/icons-material/Business';
 import DomainAddIcon from '@mui/icons-material/DomainAdd';
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import { StoreIcon } from './store';
 import { useRef, useState } from 'react';
 import { IconCard } from './IconCardComp';
 import { HomeCard } from './houseCardComp';
 import home1 from '../../imgs/home1.png'; 
 import home2 from '../../imgs/home2.png'; 
-import { ProductCard, TopOfferCard } from './topOfferCard';
 import { MidSectionTopOffers } from './midSectionTopOffers';
 import { PropertyCost } from './propertyCost';
 
 export const MidSections = () => {
     const midRef = useRef()
-    function triggleClick () {
-        // const 
-    }
     return (
         <div className="mid-section" ref={midRef}>
             <div className="mid-section-cards">

@@ -1,10 +1,15 @@
 .home {
     border: 0px;
+    /* border: 1px dashed grey; */
     --padding-home: 100px; 
     /* padding-left: var(--padding-home);
     padding-right: var(--padding-home); */
     --home-width : 1300px;
     --label-color: #808080; 
     margin-bottom: 20px;
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
