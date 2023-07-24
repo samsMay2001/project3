@@ -2,13 +2,14 @@
     /* border: 1px dashed grey; */
     background-color: #f5f4f8;
     height: 550px;
-    display: flex;
+    padding-top: 20px;
+    /* display: flex; */
 }
 .footer-content{
     /* border: 1px dashed grey; */
     width: 1300px;
     margin: auto;
-    height: 400px;
+    height: 300px;
     display: flex;
 }
 .footer-col{
@@ -140,3 +141,67 @@
 }
 
 
+.ios-app{
+    display: flex;
+    margin-bottom: 50px;
+    max-width: 1300px;
+    background-color: #1f1b2d;
+    margin: auto;
+    height: 190px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.ios-app-section{
+    /* border: 1px dashed grey; */
+}
+.ios-app-section:nth-child(1){
+    width: 20%;
+    height: 250px;
+    margin-top: -59px;
+    overflow: hidden;
+}
+.ios-app-section:nth-child(2){
+    width: 27%;
+    height: 100%;
+    color: white;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+.ios-app-section:nth-child(2) > h2{
+    margin-bottom: 20px;
+}
+.ios-app-section:nth-child(3), .ios-app-section:nth-child(4){
+    width: 180px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 7px;
+    background-color: #403b51;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    /* color: white; */
+}
+.ios-app-sec1{
+    /* border: 1px dashed grey; */
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+.ios-app-sec2{
+    position: absolute;
+    left: 35%;
+    font-size: 12px;
+    top: 5px;
+}
+.ios-app-sec3{
+    position: absolute;
+    left: 35%;
+    font-weight: 700;
+    top: 20px;
+    font-size: 18px;
+}

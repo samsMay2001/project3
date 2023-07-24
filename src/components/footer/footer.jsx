@@ -9,6 +9,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import { FooterPost } from './footerPost';
+import { PhoneApp } from './phoneApp';
+import AppleIcon from '@mui/icons-material/Apple';
+import GoogleIcon from '@mui/icons-material/Google';
 // import logo from '../imgs/Logo1.png'
 
 export const Footer = () => {
@@ -62,6 +65,37 @@ export const Footer = () => {
                             effortlessly find your dream home.`
                         }
                     />
+                </div>
+            </div>
+            <div className="ios-app">
+                <div className="ios-app-section">
+                    <PhoneApp/>
+                </div>
+                <div className="ios-app-section">
+                    <h2>Download Our App</h2>
+                    <div>Find everything you need for buying, selling &
+                        renting property in our new Finder App!
+                    </div>
+                </div>
+                <div className="ios-app-section">
+                    <div className='ios-app-sec1'>
+                        <AppleIcon fontSize='large'/>
+                    </div>
+                    <div className='ios-app-sec2'>
+                        {/* <GoogleIcon/> */}
+                        Available on the
+                    </div>
+                    <div className='ios-app-sec3'>App Store</div>
+                </div>
+                <div className="ios-app-section">
+                    <div className='ios-app-sec1'>
+                        <GoogleIcon fontSize='large'/>
+                        {/* <AppleIcon/> */}
+                    </div>
+                    <div className='ios-app-sec2'>
+                        GET IT ON
+                    </div>
+                    <div className='ios-app-sec3'>Google Play</div>
                 </div>
             </div>
         </div>
