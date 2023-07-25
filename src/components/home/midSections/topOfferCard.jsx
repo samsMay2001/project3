@@ -4,21 +4,27 @@ import TimeToLeaveOutlinedIcon from '@mui/icons-material/TimeToLeaveOutlined';
 import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import { useState } from 'react';
+import {useNavigate} from 'react-router-dom'
 export const ProductCard = ({width, verified, featured, newListing, forSale, location, size, price, numBedRooms, numBathRooms, numParking}) => {
     const [activeIcon, setActiveIcon] = useState(false); 
     const handleMouseEnter = () => {
         setActiveIcon(true);
-      };
+    };
+    const navigate = useNavigate(); 
+    function handleClick(){
+        navigate('/catalog/product')
+    }
+    
     // const width = 330;   
     const handleMouseLeave = () => {
     setActiveIcon(false);
     };
     return (
-        <div className="product-card"
+        <div className="product-card" onClick={handleClick}
         style={width ? {width: `${320}px`, height: '370px'} : {width: '295px', height: '415px'}}
         onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
             <div className="product-img"
-                style={width ? {height: '160px'}: {height: '220px'}}
+                style={width ? {height: '160px'}: {height: '210px'}}
             >
                 <div className={`product-img-background ${ activeIcon && 'product-img-active'}`}>
                     <div className='product-img-labels'>
