@@ -8,12 +8,13 @@ import { ProductList } from './components/productlist/productlist';
 import { Cart } from './components/cart/cart';
 import { Admin } from './components/Admin/admin';
 import { Categories } from './components/Categories/categories';
+import 'bootstrap/dist/css/bootstrap.min.css'
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout/>}>
             <Route index element={<Home/>}/>
             <Route path="brands" element={<Brands/>}/>
-            <Route path="men" element={<ProductList/>}/>
+            <Route path="catalog" element={<ProductList/>}/>
             <Route path="women" element={<ProductList/>}/>
             <Route path="categories" element={<Categories/>}/>
             <Route path="cart" element={<Cart/>}/>

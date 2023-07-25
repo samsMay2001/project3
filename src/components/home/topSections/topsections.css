@@ -1,4 +1,4 @@
-.top-sections{
+.my-top-sections{
     /* border: 1px dashed grey; */
     margin: auto;
     height: 570px;
@@ -7,14 +7,14 @@
     margin-bottom: 50px;
     /* overflow: hidden; */
 }
-.top-section:first-child{
+.my-top-section:first-child{
     /* border: 1px dashed grey; */
     height: 100%;
     width: 50%;
     z-index:1;
     padding-top: 100px;
 }
-.top-section:nth-child(2){
+.my-top-section:nth-child(2){
     /* border: 1px dashed grey; */
     height: 100%;
     width: 50%;
@@ -22,7 +22,7 @@
     display: flex;
 }
 
-.top-section > h1{
+.my-top-section > h1{
     /* border: 1px dashed grey; */
     margin: 0;
     width: 87%;
@@ -31,7 +31,7 @@
     line-height: 55px;
     margin-bottom: 20px;
 }
-.top-section > p{
+.my-top-section > p{
     margin: 0;
     width: 77%;
     font-size: 15px;
@@ -39,7 +39,7 @@
     color: var(--label-color);
     margin-bottom: 35px;
 }
-.top-section > button{
+.my-top-section > button{
     height: 45px;
     border-radius: 17px;
     color: #d1d1d1;
@@ -51,26 +51,26 @@
     margin-bottom: 30px;
     cursor: pointer;
 }
-.top-section-stickers{
+.my-top-section-stickers{
     display: flex;
     margin-bottom: 20px;
 }
-.top-section-stickers >div {
+.my-top-section-stickers >div {
     margin-right: 20px;
 }
-.top-section-stickers >div >h1{
+.my-top-section-stickers >div >h1{
     margin: 0;
     font-size: 50px;
     font-weight: 600;
 }
-.top-section-stickers >div >p{
+.my-top-section-stickers >div >p{
     margin: 0;
     color: var(--label-color);
     font-size: 13px;
     font-weight: 500;
 }
-/* .top-section-stickers >div  */
-.top-section-sticker1{
+/* .my-top-section-stickers >div  */
+.my-top-section-sticker1{
     display: flex;
     margin-bottom: 20px;
 }
@@ -102,7 +102,7 @@
     font-size: 14px;
     color: white;
 }
-.top-section {
-    position: relative;
+.my-top-section {
+    position: relative !important;
 
 }

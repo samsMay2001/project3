@@ -16,7 +16,7 @@ export const PropertyCost = () => {
                     (apartment, house, land, etc.).<br/>
                     Calculate the cost of your property with our new Calculation Service.
                 </div>
-                <Button variant="outlined" startIcon={<CalculateIcon />}>
+                <Button  startIcon={<CalculateIcon />}>
                     Calculate
                 </Button>
             </div>

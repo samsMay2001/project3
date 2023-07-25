@@ -1,4 +1,4 @@
-.navbar{
+.my-navbar{
     /* border: 1px dashed grey; */
     --nav-color : #424242;
     --nav-focus : #FC5E3B; 
@@ -38,7 +38,7 @@
     color: var(--nav-color);
 }
 .nav-tab:nth-child(2){
-    border-left: 1px solid #d2d2d2;
+    /* border-left: 1px solid #d2d2d2; */
     display: flex;
     align-items: center;
     height: 30px;

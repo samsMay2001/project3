@@ -26,13 +26,13 @@ export const NavBar = () => {
         )
     })
     return (
-        <div className={`navbar ${showShadown && 'navbar-shadow'}`}>
+        <div className={`my-navbar ${showShadown && 'navbar-shadow'}`}>
             <div className="navbar1">
                 <NavLink className="nav-logo" to={"/"}> <img style={{width: '150px'}} src={applogo} alt='logo'/></NavLink>
-                <NavLink className={"nav-tab"} to={"/men"}>Men</NavLink>
-                <NavLink className={"nav-tab"} to={"/women"}>Women</NavLink>
-                <NavLink className={"nav-tab"} to={"/categories"}>Categories</NavLink>
-                <NavLink className={"nav-tab"} to={"/brands"}>Brands</NavLink>
+                <NavLink className={"nav-tab"} to={"/"}>Home</NavLink>
+                <NavLink className={"nav-tab"} to={"/catalog"}>Catalog</NavLink>
+                <NavLink className={"nav-tab"} to={"/account"}>Vendor</NavLink>
+                <NavLink className={"nav-tab"} to={"/brands"}>About</NavLink>
                 
                 <div className="nav-right-area">
                     <div>

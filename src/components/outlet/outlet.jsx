@@ -4,7 +4,7 @@ import './outlet.css'
 import { Footer } from '../footer/footer'
 export const RootLayout = () => {
     return (
-        <div className='outlet'>
+        <div className='my-outlet'>
             <NavBar/>
             <main>
                 <Outlet/>

@@ -5,7 +5,7 @@ import { TopSections } from './topSections/topsections'
 
 export const Home = () => {
     return (
-        <div className='home'>
+        <div className='my-home'>
             <TopSections/>
             <MidSections/>
             {/* <BottomSections/> */}

@@ -2,8 +2,8 @@ import './topsections.css'
 import promoImg from '../../imgs/hero-image.jpg'
 export const TopSections = () => {
     return (
-        <div className="top-sections">
-            <div className='top-section'>
+        <div className="my-top-sections">
+            <div className='my-top-section'>
                 <h1>
                     Easy way to find a perfect property
                 </h1>
@@ -13,7 +13,7 @@ export const TopSections = () => {
                     Search millions of apartements and house Finder
                 </p>
                 <button>Find a broker</button>
-                <div className='top-section-stickers'>
+                <div className='my-top-section-stickers'>
                     <div>
                         <h1>80+</h1>
                         <p>Unique Homes</p>
@@ -23,14 +23,14 @@ export const TopSections = () => {
                         <p>Locations</p>
                     </div>
                 </div>
-                <div className='top-section-sticker1'>
+                <div className='my-top-section-sticker1'>
                     <div className='blue'></div>
                     <div className='orange'></div>
                 </div>
                 <div style={{color: '#808080', fontSize:'13px', fontWeight:'500'}}>Get up to <strong style={{color:'#2f2f2f'}}>5% OFF</strong></div>
             </div>
 
-            <div className='top-section'>
+            <div className='my-top-section'>
                 <img className='back-img' src={promoImg} alt='promoImg' />
             </div>
         </div>
