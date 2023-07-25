@@ -3,8 +3,8 @@ import { BottomSections } from '../home/bottomSections/bottomSections'
 import { HomeProduct } from '../home/homeProduct/homeProduct'
 import Button from '@mui/material'
 import './productlist.css'
-import { Pagination } from '@mui/material'
 import { ProductSideBar } from './sidebar'
+import { Products } from './products'
 
 export const ProductList = () => {
     const [productList, setProductList] = useState(
@@ -25,9 +25,7 @@ export const ProductList = () => {
     return (
         <div className='product-list'>
             <ProductSideBar/>
-            <div className="product-list-items">
-                <Pagination className='pagination' count={10} hidePrevButton hideNextButton />
-            </div>
+            <Products/>
         </div>
     )
 }

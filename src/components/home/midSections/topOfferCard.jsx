@@ -4,25 +4,31 @@ import TimeToLeaveOutlinedIcon from '@mui/icons-material/TimeToLeaveOutlined';
 import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import { useState } from 'react';
-export const ProductCard = ({verified, featured, newListing, forSale, location, size, price, numBedRooms, numBathRooms, numParking}) => {
+export const ProductCard = ({width, verified, featured, newListing, forSale, location, size, price, numBedRooms, numBathRooms, numParking}) => {
     const [activeIcon, setActiveIcon] = useState(false); 
     const handleMouseEnter = () => {
         setActiveIcon(true);
       };
-    
-      const handleMouseLeave = () => {
-        setActiveIcon(false);
-      };
+    // const width = 330;   
+    const handleMouseLeave = () => {
+    setActiveIcon(false);
+    };
     return (
-        <div className="product-card" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
-            <div className="product-img">
+        <div className="product-card"
+        style={width ? {width: `${320}px`, height: '370px'} : {width: '295px', height: '415px'}}
+        onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
+            <div className="product-img"
+                style={width ? {height: '160px'}: {height: '220px'}}
+            >
                 <div className={`product-img-background ${ activeIcon && 'product-img-active'}`}>
                     <div className='product-img-labels'>
                         { verified &&<div className="product-img-label-green">Verified</div>}
                         { featured &&<div className="product-img-label-red">Featured</div>}
                         { newListing &&<div className="product-img-label-blue">New</div>}
                     </div>
-                    <div className={`product-fav ${activeIcon && 'product-fav-active'}`}>
+                    <div className={`product-fav ${activeIcon && 'product-fav-active'}`}
+                        style={width ? {width: '37px'}:{width: '40px'}}
+                    >
                         <FavoriteBorderOutlinedIcon fontSize='small'/>
                     </div>
                 </div>
