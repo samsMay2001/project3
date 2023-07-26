@@ -7,6 +7,8 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import { ProductViewGrid } from './productViewGrid';
 
+import { ProductDescForm } from './poductDescForm';
+
 export const ProductView = () => {
     return (
         <div className="productView">
@@ -24,6 +26,7 @@ export const ProductView = () => {
                 </div>
             </div>
             <ProductViewGrid/>
+            <ProductDescForm/>
         </div>
     )
 }
