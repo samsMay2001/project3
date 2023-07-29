@@ -5,10 +5,6 @@ import Rating from '@mui/material/Rating';
 import WifiCalling3Icon from '@mui/icons-material/WifiCalling3';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import profile from '../imgs/profile.jpg'
-// import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-// import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 export const ProductDescForm = () => {
     return (
         <div className="productView-desc">
@@ -42,12 +38,6 @@ export const ProductDescForm = () => {
                         <input type="text" name="" id="" className='form-control' placeholder='Your name*' />
                         <input type="text" name="" id="" className='form-control' placeholder='Email*' />
                         <input type="text" name="" id="" className='form-control' placeholder='Phone*' />
-                            {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
-                                <DemoContainer components={['DatePicker']}>
-                                    <DatePicker label="Basic date picker" className="test" />
-                                </DemoContainer>
-                            </LocalizationProvider>
-                        <input type="text" name="" id="" className='form-control' placeholder='Choose a date*' /> */}
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Write a message*'></textarea>
                         <div style={{display: 'flex', alignContent: 'center'}}>
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
@@ -58,7 +48,6 @@ export const ProductDescForm = () => {
                         <div className='agent-send-btn'>Send Request</div>
                     </div>
                 </div>
-                    {/* <div style={{border: '1px dashed grey', height: '1000px'}}></div> */}
             </div>
     )
 }
