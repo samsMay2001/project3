@@ -15,6 +15,9 @@ export const NavBar = () => {
     function handleUserClick(){
         navigate('/admin')
     }
+    function newProperty(){
+        navigate('/newproperty')
+    }
     useEffect(()=> {
         window.addEventListener('scroll', ()=>{
             const scrollPosition = window.scrollY;
@@ -43,7 +46,7 @@ export const NavBar = () => {
                         </div>
                         <div className="nav-right-btn">
                             <AddIcon className=''/>
-                            <div>Add Property</div>
+                            <div onClick={newProperty}>Add Property</div>
                         </div>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ export const RootLayout = () => {
             <main>
                 <Outlet/>
             </main>
-            <SignIn/>
+            {/* <SignIn/> */}
             <Footer/>
         </div>
     )

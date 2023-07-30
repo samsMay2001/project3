@@ -11,6 +11,7 @@ import { ProductView } from './components/product/productView';
 import { Home } from './components/home/home/home';
 // import { About } from './components/About/About';
 import { About } from './components/About/about'
+import { NewProperty } from './components/NewProperty/newProperty';
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout/>}>
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
             <Route path="categories" element={<Categories/>}/>
             <Route path="cart" element={<Cart/>}/>
             <Route path="admin" element={<Admin/>}/>
+            <Route path="newproperty" element={<NewProperty/>}/>
             <Route path="*" element={<Home/>}/>
         </Route>
     )
