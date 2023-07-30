@@ -12,7 +12,7 @@ export const ProductCard = ({width, verified, featured, newListing, forSale, loc
     };
     const navigate = useNavigate(); 
     function handleClick(){
-        navigate('/product')
+        navigate('/listings/listing1')
     }
     
     // const width = 330;   

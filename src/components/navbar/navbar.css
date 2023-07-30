@@ -57,11 +57,8 @@
     color: var(--nav-color); 
     cursor: pointer;
 }
-.nav-tab:active{
+.nav-tab.active{
     color: var(--nav-focus); 
-}
-.nav-tab:focus{
-    color:var(--nav-focus)
 }
 .nav-right-area{
     /* border: 1px dashed grey; */

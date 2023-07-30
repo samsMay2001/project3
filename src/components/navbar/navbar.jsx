@@ -30,9 +30,8 @@ export const NavBar = () => {
             <div className="navbar1">
                 <NavLink className="nav-logo" to={"/"}> <img style={{width: '150px'}} src={applogo} alt='logo'/></NavLink>
                 <NavLink className={"nav-tab"} to={"/"}>Home</NavLink>
-                <NavLink className={"nav-tab"} to={"/apartments"}>Apartments</NavLink>
-                <NavLink className={"nav-tab"} to={"/homes"}>Homes</NavLink>
-                <NavLink className={"nav-tab"} to={"/account"}>Vendor</NavLink>
+                <NavLink className={"nav-tab"} to={"/listings"}>Listings</NavLink>
+                <NavLink className={"nav-tab"} to={"/location"}>Location</NavLink>
                 <NavLink className={"nav-tab"} to={"/brands"}>About</NavLink>
                 
                 <div className="nav-right-area">
