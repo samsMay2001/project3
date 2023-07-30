@@ -33,7 +33,7 @@ export const NavBar = () => {
                 <NavLink className={"nav-tab"} to={"/listings"}>Listings</NavLink>
                 <NavLink className={"nav-tab"} to={"/location"}>Location</NavLink>
                 <NavLink className={"nav-tab"} to={"/about"}>About</NavLink>
-                <NavLink className={"nav-tab"} to={"/contact-us"}>Contact Us</NavLink>
+                {/* <NavLink className={"nav-tab"} to={"/contact-us"}>Contact Us</NavLink> */}
                 
                 <div className="nav-right-area">
                     <div>

@@ -12,7 +12,7 @@ export const About1 = () => {
                 more than 10 years. Search millions of apartments and 
                 houses on Finder.
                 </div>
-                <button>Contact us</button>
+                <button>See Listings</button>
             </div>
             <div id="abt-side2">
                 <div>

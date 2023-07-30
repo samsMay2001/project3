@@ -12,7 +12,7 @@ export const TopSections = () => {
                     of real estate. We have been operating more than 10 years. 
                     Search millions of apartements and house Finder
                 </p>
-                <button>Find a broker</button>
+                <button>See Listings</button>
                 <div className='my-top-section-stickers'>
                     <div>
                         <h1>80+</h1>
