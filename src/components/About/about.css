@@ -5,7 +5,7 @@
 }
 .about-section {
     /* border: 1px dashed grey; */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 #about1{
     display: flex;
@@ -74,4 +74,39 @@
 }
 #abt-side2 > div > div:active{
     background-color: #f1f1f1
+}
+#about2 > h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+#about2 > div {
+    /* border: 1px dashed grey; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 25px 0 25px;
+}
+#about2 > div > div {
+    /* border: 1px dashed red; */
+    width: 400px;
+    padding-left: 25px;
+    user-select: none;
+    cursor: grab;
+}
+.about2-card-icon{
+    /* border: 1px dashed grey;  */
+    font-size: 50px !important;
+    color: #FC5E3B;
+    margin-bottom: 20px;
+}
+#about2 > div > div > h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+#about2 > div > div > div {
+    font-size: 17px;
+    /* font-weight: 500; */
+    color: #646464;
+    line-height: 23px;
 }

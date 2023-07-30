@@ -9,7 +9,7 @@ export const About1 = () => {
                 <div>
                 We provide a complete service for the sale, purchase 
                 or rental of real estate. We have been operating 
-                more than 10 years.Search millions of apartments and 
+                more than 10 years. Search millions of apartments and 
                 houses on Finder.
                 </div>
                 <button>Contact us</button>
