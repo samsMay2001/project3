@@ -1,10 +1,11 @@
 import { NavLink, useNavigate } from 'react-router-dom'
 import './navbar.css'
-import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import AddIcon from '@mui/icons-material/Add';
 import applogo from '../imgs/logo2.png'
+import Avatar from '@mui/material/Avatar';
 import { useEffect, useState } from 'react';
+import profImg from '../imgs/profile.jpg'
 
 export const NavBar = () => {
     const navigate = useNavigate(); 
@@ -13,7 +14,7 @@ export const NavBar = () => {
         navigate('/cart')
     }
     function handleUserClick(){
-        navigate('/admin')
+        navigate('/user')
     }
     function newProperty(){
         navigate('/newproperty')
@@ -40,10 +41,13 @@ export const NavBar = () => {
                 
                 <div className="nav-right-area">
                     <div>
-                        <div className="nav-right-btn">
+                        <div className='nav-right-btn' onClick={handleUserClick}>
+                            <Avatar src={profImg} style={{width:'50px', height: '50px'}}/>
+                        </div>
+                        {/* <div className="nav-right-btn">
                             <AccountCircleOutlinedIcon className='btn-icon'/>
                             <div>Sign In</div>
-                        </div>
+                        </div> */}
                         <div className="nav-right-btn">
                             <AddIcon className=''/>
                             <div onClick={newProperty}>Add Property</div>
