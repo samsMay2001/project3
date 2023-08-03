@@ -153,6 +153,8 @@
     background-color: #ffffff00;
     color: #fc5e3b00;
     transition: .25s;
+    cursor: pointer;
+    margin-left: auto;
 }
 .product-fav.product-fav-active{
     background-color: white;
